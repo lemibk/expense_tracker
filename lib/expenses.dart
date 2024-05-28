@@ -12,7 +12,11 @@ class Expenses extends StatefulWidget {
 
 class ExpenseState extends State<Expenses> {
   final List<Expense> registeredExpenses = [
-    Expense(title: 'Flutter course', amount: 19.99),
+    Expense(
+        title: 'Flutter course',
+        amount: 19.99,
+        date: DateTime.now(),
+        category: Category.work),
   ];
   @override
   Widget build(BuildContext context) {
